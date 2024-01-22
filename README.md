@@ -5,6 +5,7 @@ This repository contains a comprehensive stock forecasting system that leverages
 #Features
 Data Retrieval: Utilizes public APIs to fetch real-time stock market data.
 Data Storage: Stores fetched data in MongoDB for efficient and organized data management.
+WEB API: CRUD Web Api to fetch and interacti with Databse
 Data Processing and Analysis: Performs full-scale data processing and analysis to extract meaningful insights.
 TF LSTM Forecasting: Implements a forecasting model using TensorFlow's Long Short-Term Memory (LSTM) neural network for accurate stock price predictions.
 Q-learning Trading Algorithm: Includes an implementation of a Q-learning algorithm for automated trading decisions.

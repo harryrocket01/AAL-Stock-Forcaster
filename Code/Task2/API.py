@@ -1,5 +1,5 @@
 """
-DAPS Final Assessment - Api.py
+Api.py
 Forcasting and Predicting Stock
 Author - Harry Softley-Graham
 Written - Nov 2023 - Jan 2024

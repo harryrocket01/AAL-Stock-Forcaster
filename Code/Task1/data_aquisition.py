@@ -1,5 +1,5 @@
 """
-DAPS Final Assessment - DataAquision.py
+DataAquision.py
 Forcasting and Predicting Stock
 Author - Harry Softley-Graham
 Written - Nov 2023 - Jan 2024
