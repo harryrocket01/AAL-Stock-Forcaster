@@ -44,7 +44,7 @@ class DataStorage:
     """
 
     def __init__(self):
-        url = "mongodb+srv://root:Rocket123@daps.nvxcqej.mongodb.net/?retryWrites=true&w=majority"
+        url = "MONGODB URL"
 
         self.client = MongoClient(url)
         self.create_database()
