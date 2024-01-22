@@ -1,5 +1,5 @@
-## Stock Forecaster
-# Overview
+# Stock Forecaster
+## Overview
 This repository contains a comprehensive stock forecasting system that leverages public APIs, MongoDB for data storage, TensorFlow's LSTM for forecasting, and a Q-learning trading algorithm. The system encompasses data retrieval, processing, analysis, and predictive modeling to assist users in making informed decisions in the stock market.
 
 #Features
