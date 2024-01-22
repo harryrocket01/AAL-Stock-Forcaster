@@ -1,34 +1,75 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/EAhJvz6x)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12813381&assignment_repo_type=AssignmentRepo)
-# Data Acquisition and Processing Systems (DAPS) (ELEC0136)
+##Stock Forecaster
+#Overview
+This repository contains a comprehensive stock forecasting system that leverages public APIs, MongoDB for data storage, TensorFlow's LSTM for forecasting, and a Q-learning trading algorithm. The system encompasses data retrieval, processing, analysis, and predictive modeling to assist users in making informed decisions in the stock market.
 
-Welcome to the final assignment of the _Data Acquisition and Processing Systems_ (DAPS) course ELEC0136 at UCL.
+#Features
+Data Retrieval: Utilizes public APIs to fetch real-time stock market data.
+Data Storage: Stores fetched data in MongoDB for efficient and organized data management.
+Data Processing and Analysis: Performs full-scale data processing and analysis to extract meaningful insights.
+TF LSTM Forecasting: Implements a forecasting model using TensorFlow's Long Short-Term Memory (LSTM) neural network for accurate stock price predictions.
+Q-learning Trading Algorithm: Includes an implementation of a Q-learning algorithm for automated trading decisions.
 
-This repository contains the scaffolding to submit your code.
-Your code must be in plain Python files and you cannot use Jupyter notebooks to solve the assignment.
+## Installation
 
-**We will consider only code written on the `main` branch**, so please work only on that branch.
+1. Clone the repository:
 
-Please, follow the instructions in the *Submission* section of the assignment document to submit your code.
+    ```bash
+    git clone https://github.com/your-username/stock-forecaster.git
+    cd stock-forecaster
+    ```
 
-GLHF
+2. Create a virtual environment (optional but recommended):
 
-# Notes + Overveiw of code structure.
+    ```bash
+    python -m venv venv
+    source venv/bin/activate      # On Windows, use 'venv\Scripts\activate'
+    ```
 
-This is my final submission for my coursework for ELEC0136.
+3. Install dependencies using `requirements.txt`:
 
-The main file is set up and exectutes each section of code in order of the tasks, as in line with the document.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-An enviroment file has been included. Along with a read mean. Python version is 3.11.7
+    Alternatively, you can use `conda` with the provided `environment.yml` file:
 
-The majority of the code is found within .\DAPs_Code. All graphics for each task are found within .\DAPs_Code\Task_#\Graphics.
+    ```bash
+    conda env create -f environment.yml
+    conda activate stock-forecaster
+    ```
 
-A copy of the API is included, but not run, as inline with Provided document. Please refer to report appendix to see it working, or host it on a flask dev.
+4. Configure API keys:
+    - Obtain API keys for the data sources used (e.g., Alpha Vantage).
+    - Update the configuration file (`config.yaml`) with your API keys.
 
-Tensorflow will throw errors. I tried to hide them all, but some still may appear.
+5. Set up MongoDB:
+    - Ensure you have a running instance of MongoDB.
+    - Update the MongoDB connection details in the configuration file.
 
-Take note that some of the API may not work, as many of them have limits or sometimes gets blocked by anti spoofing measures if used too much by one IP (such as google trends). The cloud database contains all of the data needed, hence in the case where it doesnt work, everything in the code will still work fine.
+6. Run the data retrieval script:
 
-The code base was built on Window 10, on a XPS 15 (Intel 10th gen processor), hence other systems may have varying performance.
+    ```bash
+    python data_retrieval.py
+    ```
 
-Enjoy the marking of the Many-many of lines of code, and I apologise in advance for any dumb spelling mistakes in variable names :)
+7. Run the data processing and analysis script:
+
+    ```bash
+    python data_processing.py
+    ```
+
+8. Train and evaluate the LSTM model:
+
+    ```bash
+    python lstm_forecasting.py
+    ```
+
+9. Execute the Q-learning trading algorithm:
+
+    ```bash
+    python q_learning_trading.py
+    ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
