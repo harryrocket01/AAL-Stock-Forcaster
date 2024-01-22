@@ -41,8 +41,6 @@ class Api:
     """
 
     def __init__(self, db_url: str):
-        # url = "mongodb+srv://root:Rocket123@daps.nvxcqej.mongodb.net/?retryWrites=true&w=majority"
-
         self.client = MongoClient(db_url)
         self.mdb_database = self.client["DAPs_HSG"]
 
@@ -162,7 +160,7 @@ class Api:
 
 
 api = Api(
-    "mongodb+srv://root:Rocket123@daps.nvxcqej.mongodb.net/?retryWrites=true&w=majority"
+    "MONGODB URL"
 )
 
 
