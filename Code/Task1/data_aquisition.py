@@ -229,7 +229,7 @@ class FinanceData:
 
     def __init__(self):
         self.stock_data_url = "https://www.alphavantage.co/query"
-        self.api_key = "ON73XBNVNTIR9GF0"
+        self.api_key = "APIKEY"
 
         self.data = None
 
